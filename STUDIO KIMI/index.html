@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>STUDIO KIMI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="#home" onclick="showPage('home')" data-after="home" id="home-link"><h2>STUDIO KIMI <span>☺</span></h2></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#about" onclick="showPage('about')" data-after="about" id="about-link">about</a></li>
+                <li>
+                    <a href="#projects" onclick="showPage('projects')" data-after="projects">projects</a>
+                        <li class="small">
+                            <a href="#classic-content" onclick="showPage('classic')" data-after="classic" id="classic-link"><i class="fa-regular fa-circle"></i> classic design</a>
+                        </li>
+                        <li class="small">
+                            <a href="#redesign-content" onclick="showPage('redesign')" data-after="redesign"><i class="fa-regular fa-circle"></i> redesign</a>
+                        </li>
+                </li>
+                <li><a href="#review" onclick="showPage('review')" data-after="review">review</a></li>
+                <li><a href="#kontakt" onclick="showPage('kontakt')" data-after="kontakt">kontakt</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div id="home-content" style="display: block;">
+                <p>Develop a new website that serves as a compelling representation of an artist or musician, effectively summarizing your artistic profile and presenting your talents with elegance and impact.</p>
+            </div>
+            <div id="about-content" style="display: none;">
+                <h2>about</h2>
+                <p>Clarinetist and freelancer web designer, I create captivating websites tailored specifically for fellow musicians. In the wake of the pandemic, as the music world came to a standstill, the absence of live performances unexpectedly opened a gateway to a new creative realm. Inspired by the need to stay connected despite physical distances, it sparked my interest in coding, transforming it into a fulfilling hobby. With a background in music, I bring a unique understanding of the industry to my web design projects, ensuring that each site reflects the artist's essence. Combining creativity and technical expertise, I strive to enhance the online presence of musicians, helping them connect with the world in the digital pressence.</p>
+            </div>
+
+            <div id="projects-content" style="display: none;">
+                <div>
+                    <a href="#classic-content" onclick="showPage('classic')" data-after="classic" id="classic-link">
+                        <h1>Classic Website Design</h1></a>
+                    <img src="image/H1.png">
+                </div>
+                <div>
+                    <a href="#redesign-content" onclick="showPage('redesign')" data-after="redesign" id="redesign-link">
+                    <h1>Redesign website</h1></a>
+                    <img src="image/R1.png">
+                </div>
+            </div>
+            <div id="classic-content" style="display: none;">
+                <h2>Classic Website Design</h2>
+                <ul>
+                    <li>A personal website adds a level of professionalism to an artist's or musician's online presence</li>
+                    <li>The design layout emphasise on aesthetics and simplicity</li>
+                </ul>
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img src="image/H2.png">
+                        <div class="background"></div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="image/H3.png">
+                        <div class="background"></div>
+                    </div>
+                </div>
+                <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Up</button>
+
+            </div>
+            <div id="redesign-content" style="display: none;">
+                <ul>
+                    <li class="bold">REDESIGN NEW WEBSITE</li>
+                    <li>Redesigning with a new modern theme</li>
+                    <li>Reflects professionalism and helps establish a positive image for the musician</li>
+                    <li>Focus on Mobile Responsiveness</li>
+                    <li>Evaluate existing content to identify what is valuable and what can be updated or removed</li>
+                </ul>
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img src="image/R1.png">
+                        <div class="background redesign"></div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="bold">OUTDATED WEBSITE</li>
+                    <li>Unprofessional appearance with outdated design</li>
+                    <li>Poor user experience with lack of modern navigation structures, responsiveness, and user-friendly features </li>
+                </ul>
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img src="image/R2.png">
+                        <div class="background redesign"></div>
+                    </div>
+                </div>
+                <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Up</button>
+
+            </div>
+            
+
+            <div id="review-content" style="display: none;">
+                <div class="title-review">
+                    <h2>Reviews (2)</h2>
+                    <h2><i class="fa-solid fa-star"></i> 5.0 / 5</h2>
+                </div>
+                <div class="review-box">
+                    <h3> Classic Website Design</h3>
+                    <blockquote class="customer-review">
+                      The design is fantastic! It's clean, user-friendly, and visually appealing. Navigation is intuitive, and I love the color scheme. 
+                    </blockquote>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>    
+                    </p>
+                    <p class="recommendation">I highly recommend your website design!</p>
+                    <p class="reviewer-info">Harald Oeler, Akkordionist | Date: 12.12.2023</p>
+                  </div>
+                  <div class="review-box">
+                    <h3>Redesign Website</h3>
+                    <blockquote class="customer-review">
+                      The design is fantastic! It's clean, user-friendly, and visually appealing. Navigation is intuitive, and I love the color scheme. 
+                    </blockquote>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>    
+                    </p>
+                    <p class="recommendation">I highly recommend your website design!</p>
+                    <p class="reviewer-info">Harald Oeler, Akkordionist | Date: 12.12.2023</p>
+                  </div>
+            </div>
+            <div id="kontakt-content" style="display: none;">
+            <div class="kontakt-box">
+                <div>
+                    <img class="kontakt-img" src="image/kimi.jpeg">
+                      
+                </div>
+                <div>
+                    <form action="https://formspree.io/f/mknlldvb" method="POST">
+                        <p>STUDIO KIMI ☺</p>        
+                        <p>Whether you have questions, or have a specific inquiry, feel free to reach out to me at any time. </p>  
+                        <label>
+                            name:
+                            <input type="name" name="name" required>
+                        </label>
+                        <label>
+                            email:
+                            <input type="email" name="email" required>
+                        </label>
+                        <label>
+                            message:
+                            <textarea name="message" required rows="3"></textarea>
+                        </label>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="top">
+            <p>top</p>
+        </div>
+        <div class="aside">
+            <p class="transform">WEBDESIGN<br> FOR ARTIST & MUSICIAN</p>
+        </div>
+        <div class="bottom">bottom</div>
+        <div class="footer">
+            <p>designed & copyright © 2024 by studio kimi ☺</p>
+
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all content sections
+            document.querySelectorAll('.main > div').forEach((section) => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected content section
+            const selectedSection = document.getElementById(`${pageId}-content`);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+            // Scroll to the top of the page
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        // Show/hide the scroll-to-top button based on scroll position
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        // Scroll to the top of the page when the button is clicked
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+</html>
