@@ -325,6 +325,9 @@ button:hover {
 }
 
   @media only screen and (max-width: 767px) {
+    .header{
+        font-size: 35px;
+    }
     .container {
         grid-template-columns: 1fr; /* Change to a single column layout */
         grid-template-rows: auto; /* Adjust rows to accommodate content */
