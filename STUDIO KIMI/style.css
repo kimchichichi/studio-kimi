@@ -44,10 +44,10 @@ li {
 span {
     color: rgb(107, 189, 159);
 }
+
 .container{
     display: grid;
     height: auto;
-
     grid-template-columns: 200px 1fr 200px;
     grid-template-rows: 150px 150px 1fr 150px 100px;
     grid-template-areas: "header header header"
@@ -86,93 +86,7 @@ span {
     font-size: 40px;
     text-transform: uppercase;
 }
-/* kontakt */
-img {
-    height: 100%;
-    width: 100%;
-}
-.kontakt-img {
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
 
-form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    resize: none; 
-    box-sizing: border-box;
-    border: none; 
-    border-bottom: 1px solid black; 
-    font-weight: lighter;
-    font-size: 15px;
-}
-input:focus,
-textarea:focus {
-    outline: none;
-}
-
-button {
-    background-color: var(--second-color);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: lighter;
-}
-
-button:hover {
-    background-color: var(--main-color);
-}
-
-/* kontakt end */
-
-.top{
-    grid-area: top;
-    justify-items: center;
-    border-bottom: 1px solid black;
-
-}
-.aside {
-    grid-area:aside;
-    justify-items: center;
-    border-bottom: 1px solid black;
-    padding:20px;
-    font-size: 30px;
-
-}
-.transform {
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg); 
-
-}
-
-.bottom {
-    grid-area: bottom;
-    justify-items: center;
-
-}
-.footer {
-    grid-area:footer;
-    justify-items: center;
-    border-top: 1px solid black;
-    font-size: 1rem;
-
-}
 /* classic & redesign */
 .image-container {
     display: flex;
@@ -322,3 +236,139 @@ button:hover {
     /* classic & redesign end */
 
   }
+/* kontakt */
+img {
+    height: 100%;
+    width: 100%;
+}
+.kontakt-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    resize: none; 
+    box-sizing: border-box;
+    border: none; 
+    border-bottom: 1px solid black; 
+    font-weight: lighter;
+    font-size: 15px;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+button {
+    background-color: var(--second-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+button:hover {
+    background-color: var(--main-color);
+}
+
+/* kontakt end */
+
+.top{
+    grid-area: top;
+    justify-items: center;
+    border-bottom: 1px solid black;
+
+}
+.aside {
+    grid-area:aside;
+    justify-items: center;
+    border-bottom: 1px solid black;
+    padding:20px;
+    font-size: 30px;
+
+}
+.transform {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg); 
+
+}
+
+.bottom {
+    grid-area: bottom;
+    justify-items: center;
+
+}
+.footer {
+    grid-area:footer;
+    justify-items: center;
+    border-top: 1px solid black;
+    font-size: 1rem;
+
+}
+
+  @media only screen and (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+        grid-template-rows: auto; /* Adjust rows to accommodate content */
+        grid-template-areas: 
+            "header header"
+            "menu main"
+            "top top"
+            "aside aside"
+            "bottom bottom"
+            "footer footer";
+    }
+    li {
+        font-size: 20px;
+    }
+    .menu {
+        padding-top: 100px;
+        width: 150px;
+    }
+    .menu i {
+        font-size: 12px;
+    }
+    .main{
+        padding: 20px;
+        text-align: justify;
+        border-right: none;
+    }
+    #home-content {
+        font-size: 20px;
+    }
+    #about-content {
+    }
+    #scrollToTopBtn {
+        left: 90%;
+    }
+    .top {
+        border-top: 1px solid black;
+    }
+
+
+    .transform {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+    }
+    .footer {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+}
